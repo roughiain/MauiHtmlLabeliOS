@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiHtmlLabelPlatformSpike.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            x:Name="TheVerticalStackLayout"
+            VerticalOptions="Center">
+            <Label TextType="Html">
+                <![CDATA[
+                This is <strong style="color:red">HTML</strong> text from cdata hot reload.
+                ]]>
+            </Label>
+            <Label Text="This is &lt;strong style=&quot;color:red&quot;&gt;HTML&lt;/strong&gt; text. from escape text hot reload"
+                   TextType="Html"  />
+           
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
